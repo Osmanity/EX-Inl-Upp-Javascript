@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Att Göra-App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Todo Application 📃</h1>
+
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="Skriv in en ny uppgift..." required>
+            <button type="submit">Lägg till</button>
+            <p id="error-message" class="error-message hidden">Vänligen ange en giltig uppgift!</p>
+        </form>
+
+        <ul id="todo-list"></ul>
+
+        <!-- Modal -->
+        <div id="modal" class="modal hidden">
+            <div class="modal-content">
+                <p>Du kan inte ta bort en uppgift som inte är markerad som slutförd.</p>
+                <button id="close-modal">Stäng</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
